@@ -134,3 +134,4 @@ export const PRODUCTS: Product[] = [
 ];
 
 export const COMBO_PRICE = 189.90;
+export const CHECKOUT_URL = "https://galeriadeboleiro.com.br/checkouts/cn/hWN8WK5aDQ2WbYIbg3zBgSP4/pt-br?_r=AQABvL5uNz3bv0QEuDspM8ecY-84B7cEuArsW-kq36zhz9s";

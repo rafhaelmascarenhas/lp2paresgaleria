@@ -1,7 +1,7 @@
 import React from 'react';
-import { X, CheckCircle2, MessageCircle, ArrowRight } from 'lucide-react';
+import { X, CheckCircle2, ShoppingCart, ArrowRight } from 'lucide-react';
 import { Product } from '../types';
-import { COMBO_PRICE } from '../constants';
+import { COMBO_PRICE, CHECKOUT_URL } from '../constants';
 
 interface CheckoutModalProps {
   isOpen: boolean;
@@ -64,11 +64,16 @@ const CheckoutModal: React.FC<CheckoutModalProps> = ({ isOpen, onClose, selected
             </span>
           </div>
 
-          <button className="w-full bg-green-500 hover:bg-green-600 text-white py-4 text-xl rounded-xl font-display font-bold uppercase tracking-wider flex items-center justify-center gap-3 transition-all duration-300 shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:shadow-[0_0_40px_rgba(34,197,94,0.6)] hover:-translate-y-1 group border border-green-400/20">
-            <MessageCircle size={24} fill="currentColor" />
-            <span>Finalizar no WhatsApp</span>
+          <a 
+            href={CHECKOUT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full bg-green-500 hover:bg-green-600 text-white py-4 text-xl rounded-xl font-display font-bold uppercase tracking-wider flex items-center justify-center gap-3 transition-all duration-300 shadow-[0_0_20px_rgba(34,197,94,0.4)] hover:shadow-[0_0_40px_rgba(34,197,94,0.6)] hover:-translate-y-1 group border border-green-400/20"
+          >
+            <ShoppingCart size={24} fill="currentColor" />
+            <span>Finalizar Compra</span>
             <ArrowRight size={24} className="group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
           
           <p className="text-center text-xs text-slate-500 mt-4">
             Ambiente Seguro. Atendimento humano imediato.

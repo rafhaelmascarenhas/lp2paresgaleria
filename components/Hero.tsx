@@ -39,10 +39,10 @@ const Hero: React.FC = () => {
                 onClick={scrollToProducts}
                 className="group relative px-8 py-4 bg-brand-accent text-white font-display font-bold text-xl uppercase tracking-wider rounded overflow-hidden shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:shadow-[0_0_40px_rgba(37,99,235,0.6)] transition-all duration-300 animate-pulse-glow"
               >
-                <span className="relative z-10 flex items-center gap-2">
+                <div className="relative z-10 flex items-center gap-2">
                   Montar Meu Combo
                   <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-                </span>
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
               </button>
               
@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
               {/* Overlay Content on Video */}
               <div className="absolute bottom-6 left-6 z-20">
                 <p className="text-white font-display font-bold text-2xl uppercase">Street Style</p>
-                <p className="text-slate-300 text-sm">Coleção Urbana 2024</p>
+                <p className="text-slate-300 text-sm">Coleção Urbana 2026</p>
               </div>
             </div>
             

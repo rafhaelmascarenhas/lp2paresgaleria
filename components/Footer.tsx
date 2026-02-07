@@ -2,6 +2,8 @@ import React from 'react';
 import { MessageCircle } from 'lucide-react';
 
 const Footer: React.FC = () => {
+  const WHATSAPP_LINK = "https://wa.me/5537991258897?text=Olá!%20Vim%20pela%20promoção%20de%202%20pares%20de%20tênis%20da%20Galeria%20e%20gostaria%20de%20finalizar%20meu%20pedido.";
+
   return (
     <footer className="bg-brand-dark border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -16,10 +18,15 @@ const Footer: React.FC = () => {
               Prefere um atendimento personalizado? Finalize seu pedido diretamente com nosso time.
             </p>
           </div>
-          <button className="bg-white text-brand-accent px-8 py-3 rounded font-bold uppercase tracking-wide flex items-center gap-2 hover:bg-slate-100 transition-colors shadow-xl">
+          <a 
+            href={WHATSAPP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white text-brand-accent px-8 py-3 rounded font-bold uppercase tracking-wide flex items-center gap-2 hover:bg-slate-100 transition-colors shadow-xl"
+          >
             <MessageCircle size={20} />
             Chamar no WhatsApp
-          </button>
+          </a>
         </div>
 
         {/* Links and Copyright */}
@@ -30,13 +37,13 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">Política de Privacidade</a>
-            <a href="#" className="hover:text-white transition-colors">Termos de Uso</a>
-            <a href="#" className="hover:text-white transition-colors">Rastrear Pedido</a>
+            <span className="cursor-default">Política de Privacidade</span>
+            <span className="cursor-default">Termos de Uso</span>
+            <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Rastrear Pedido</a>
           </div>
 
           <div>
-            © 2024. Todos os direitos reservados.
+            © 2026. Todos os direitos reservados.
           </div>
         </div>
       </div>
